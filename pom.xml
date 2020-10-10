@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>net.butfly</groupId>
+		<artifactId>parent</artifactId>
+		<version>3.1.0-SNAPSHOT</version>
+	</parent>
+	<groupId>net.butfly.alserdes</groupId>
+	<artifactId>alserdes</artifactId>
+	<version>1.2.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<properties>
+		<version.albacore>3.1.0-SNAPSHOT</version.albacore>
+		<maven.compiler.source>10</maven.compiler.source>
+		<maven.compiler.target>10</maven.compiler.target>
+	</properties>
+	<modules>
+		<module>core</module>
+		<module>hessian</module>
+		<module>jackson</module>
+		<module>avro</module>
+		<!-- <module>kryo</module> -->
+		<!-- <module>protobuf</module> -->
+	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>net.butfly.albacore</groupId>
+			<artifactId>albacore-test</artifactId>
+			<version>${version.albacore}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
